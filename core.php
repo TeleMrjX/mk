@@ -104,7 +104,7 @@ $keyboard_admin=json_encode($keyboard_admin);
       }
     case 'درباره ی این ربات':
       {
-        sendMessagewithkeyboard($chatId , "For more information can see LINK:\n\n".'https://twitter.com/motmohsen' ,$keyboard_client);
+        sendMessagewithkeyboard($chatId , "For more information can see LINK:\n\n".'https://github.com/mohsenmottaghi/Telegram-Nashenas-Havig' ,$keyboard_client);
         break;
       }
     case 'درخواست شماره کاربر':
@@ -128,7 +128,8 @@ $keyboard_admin=json_encode($keyboard_admin);
       {
         sendMessage($chatId , "Hi :)\nmy name is Mohsen , you can find me on\n\n".
                               "Twitter:\n".'https://twitter.com/motmohsen'."\n".
-                              "Instagram:\n".'https://instagram.com/mohsenmottaghi_');
+                              "Instagram:\n".'https://instagram.com/mohsenmottaghi_'
+                              "GitHub:\n".'https://github.com/mohsenmottaghi/Telegram-Nashenas-Havig');
         break;
       }
 		default:
@@ -175,5 +176,8 @@ function forwardMessage ($chatId,$tochatid,$lastmessageid)
 $url = $GLOBALS['webSite'] . '/forwardMessage?chat_id='.$chatId.'&from_chat_id='.$tochatid.'&message_id='.$lastmessageid;
 file_get_contents($url);
 }
-
+/*
+      BE HAPPY
+      MOHSEN
+*/
 ?>
