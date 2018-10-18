@@ -2,7 +2,7 @@
 ini_set('error_reporting', 'E_ALL');
 // BOT TOKEN INFORMATION
 // Edit and set your BOT TOKEN
-$botToken = "< ENTER YOUR TOKEN >";
+$botToken = "749708360:AAFlKenlHUdzKxSrZxoYliiWX2PnfeZjf88";
 $webSite = "https://api.telegram.org/bot" . $botToken;
 
 // EXTRACTING DATA FROM JSON | DO NOT EDIT IF YOU DON'T KNOW JSON !
@@ -21,9 +21,9 @@ $callbackdata=$update['callback_query']['data'];
 // ADMIN INFO
 // EDIT THIS PART WITH YOUR TELEGRAM ID :)
 $admin_id = '132322823';
-$admin_name = 'MOHSEN';
-$admin_phone = '+989036951341';
-$admin_about = "ABOUT ME";
+$admin_name = 'MhmdRza';
+$admin_phone = '+989154874731';
+$admin_about = "MhmdRza Js Nashenas Bot";
 
 // All Keybord of This bot
 $keyboard_client=  array(
@@ -66,7 +66,7 @@ $keyboard_admin=json_encode($keyboard_admin);
 
     $Client_phone_id = explode(',',$callbackdata,2);
     sendMessagewithkeyboard($Client_phone_id[1] , 'درخواست شما برای شماره ی ادمین پذیرفته شد.' . "\n".
-                                                  'Number : ' . $admin_phone . "\n\n" . 'Dev. by M O H S E N');
+                                                  'Number : ' . $admin_phone . "\n\n" . 'Dev By M h m d R z a J s');
     sendMessagewithkeyboard($admin_id , 'درخواست با موفقیت انجام شد.' , $keyboard_admin_w );
   }
   else if (strstr($callbackdata,"phone_request_s") == true)
@@ -89,7 +89,7 @@ $keyboard_admin=json_encode($keyboard_admin);
                     'Chat ID : ' . $chatId . "\n" .
                     'Username : ' . $usernameget ."\n" .
                     '-----------------------------------'."\n".
-                    'Dev. by M O H S E N' , $keyboard_admin);
+                    'Dev By M h m d R z a J s' , $keyboard_admin);
         sendMessagewithkeyboard($chatId , "سلام از این لحظه هر پیامی ارسال کنی به طور مستقیم برای " . $admin_name . " ارسال خواهد شد.در ضمن برای راحتی از کیبور زیر نیز در هر زمان می توانید استفاده کنید." , $keyboard_client);
         break;
       }
@@ -105,7 +105,7 @@ $keyboard_admin=json_encode($keyboard_admin);
       }
     case 'درباره ی این ربات':
       {
-        sendMessagewithkeyboard($chatId , "For more information can see LINK:\n\n".'https://github.com/mohsenmottaghi/Telegram-Nashenas-Havig' ,$keyboard_client);
+        sendMessagewithkeyboard($chatId , "For more information can Text Me:\n\n".'@MhmdRza_Js' ,$keyboard_client);
         break;
       }
     case 'درخواست شماره کاربر':
@@ -116,7 +116,7 @@ $keyboard_admin=json_encode($keyboard_admin);
       }
     case 'secret':
       {
-        sendMessage($chatId , "Hi :)\nYour chat ID is:\n\n".$chatId."\n\nDev. by M O H S E N");
+        sendMessage($chatId , "Hi :)\nYour chat ID is:\n\n".$chatId."\n\nDev By M h m d R z a J s");
         break;
       }
     case 'خیر':
@@ -128,9 +128,8 @@ $keyboard_admin=json_encode($keyboard_admin);
     case 'توسعه دهنده':
       {
         sendMessage($chatId , "Hi :)\nmy name is Mohsen , you can find me on\n\n".
-                              "Twitter:\n".'https://twitter.com/motmohsen'."\n".
-                              "Instagram:\n".'https://instagram.com/mohsenmottaghi_'.
-                              "GitHub:\n".'https://github.com/mohsenmottaghi/Telegram-Nashenas-Havig');
+                              "Instagram:\n".'https://instagram.com/MhmdRza_Js'.
+                              "Tele:\n".'@MhmdRza_Js');
         break;
       }
 		default:
@@ -148,7 +147,7 @@ $keyboard_admin=json_encode($keyboard_admin);
 		                    'Chat ID : ' . $chatId . "\n" .
 		                    'Username : ' . $usernameget ."\n" .
 		                    '-----------------------------------'."\n".
-		                    'Dev. by M O H S E N' , $keyboard_admin);
+		                    'Dev By M h m d R z a J s' , $keyboard_admin);
             forwardMessage($admin_id,$chatId,$lastmessageid);
             sendMessagewithkeyboard($chatId ,'پیام شما با موفقیت ارسال شد.', $keyboard_client);
           }
